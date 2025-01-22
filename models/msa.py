@@ -2,7 +2,7 @@
 
 import torch
 import torch.nn as nn
-from embedding import EmbeddingLayer
+from .embedding import EmbeddingLayer
 
 class MSA(nn.Module):
     def __init__(self, dim =192, num_heads =12, qkv_bias=False,attn_drop=0, proj_drop=0):
